@@ -1,7 +1,12 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+    }
+  }
+}
 provider "aws" {
   region = "us-east-1"
-  access_key = "AKIA3EF2APX3272A6VXV"               #authentication
-  secret_key ="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"
 }
 
 resource "aws_instance" "AutoSever" {
