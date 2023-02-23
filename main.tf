@@ -7,6 +7,8 @@ terraform {
 }
 provider "aws" {
   region = "us-east-1"
+  access_key =  ${{ secrets.AWS_ACCESS_KEY }} #authentication
+  secret_key = ${{ secrets.AWS_ACCESS_SECRET_KEY }}
 }
 
 resource "aws_instance" "AutoSever" {
