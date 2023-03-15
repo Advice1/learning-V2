@@ -1,20 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-    }
-  }
-}
-provider "aws" {
-  region = "us-east-1"
-
-}
-
-resource "aws_instance" "AutoSever" {
-  ami           = "ami-0557a15b87f6559cf"
-  instance_type = "t2.micro"
-
-  tags = {
-    Name = "Automatic Server"
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d5f15a073a1c3fee5bf3f03308e3147bffe02c9b96d45b59fed59b51b5136a8a
+size 291
